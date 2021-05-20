@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	Controller controller;
-	controller.start();
+	Controller *controller = new Controller();
+	controller->start();
 	return 0;
 }
