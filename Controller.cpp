@@ -6,6 +6,7 @@
 using namespace std;
 
 int* numeros;
+int cantidadNumeros;
 Gestor gestor;
 Controller::Controller() {
 
@@ -29,14 +30,13 @@ int Controller::leerOpcion() {
 }
 
 void Controller::inicializar() {
-    int cantidad;
     int num;
     cout << "\nInicializar programa\n";
-    cout << "Digite la cantidad de numeros: "; cin >> cantidad;
-    numeros = new int[cantidad];
+    cout << "Digite la cantidad de numeros: "; cin >> cantidadNumeros;
+    numeros = new int[cantidadNumeros];
     //int size = sizeof(numeros) /sizeof(*numeros);
     //int size = *(&numeros + 1) - numeros;
-    for (int i = 0; i < (sizeof(numeros) / sizeof(numeros[0])); i++)
+    for (int i = 0; i < cantidadNumeros; i++)
     {
         cout << "\nIngrese el numero: \n"; cin >> num;
         numeros[i] = num;
@@ -48,23 +48,22 @@ void Controller::inicializar() {
 
 
 void Controller::calcularMayor() {
-
     int mayor;
-    mayor = gestor.getMayor(numeros);
+    mayor = gestor.getMayor(numeros, cantidadNumeros);
     cout << "El numero mayor es: " << mayor;
 
 }
 
 void Controller::calcularMenor() {
     int menor;
-    menor = gestor.getMenor(numeros);
+    menor = gestor.getMenor(numeros, cantidadNumeros);
     cout << "El numero menor es: " << menor;
 }
 
 void Controller::calcularPromedio() {
 
     double promedio;
-    promedio = gestor.getPromedio(numeros);
+    promedio = gestor.getPromedio(numeros, cantidadNumeros);
     cout << "El promedio es: " << promedio;
 }
 

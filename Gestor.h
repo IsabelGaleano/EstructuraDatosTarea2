@@ -6,9 +6,9 @@
 class Gestor
 {
 public:
-	int getMayor(int numeros[]);
-	int getMenor(int numeros[]);
-	double getPromedio(int numeros[]);
+	int getMayor(int numeros[], int cantidadNumeros);
+	int getMenor(int numeros[], int cantidadNumeros);
+	double getPromedio(int numeros[], int cantidadNumeros);
 
 };
 

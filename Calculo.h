@@ -11,8 +11,10 @@ public:
 	double calcularPromedio();
 	int* getNumeros();
 	void setNumeros(int num[]);
+	void setCantidadNumeros(int cantidadNumeros);
 private:
 	int* numeros;
+	int cantidadNumeros;
 };
 
 

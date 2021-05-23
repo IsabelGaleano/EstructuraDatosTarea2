@@ -1,7 +1,7 @@
 #include "Calculo.h"
 
 Calculo::Calculo() {
-
+	cantidadNumeros = 0;
 }
 
 Calculo::Calculo(int num[]) {
@@ -16,9 +16,13 @@ void Calculo::setNumeros(int num[]) {
 	numeros = num;
 }
 
+void Calculo::setCantidadNumeros(int cantidad) {
+	cantidadNumeros = cantidad;
+}
+
 int Calculo::calcularMayor() {
 	int mayor = numeros[0];
-	for (int i = 0; i < (sizeof(numeros) / sizeof(*numeros)); i++)
+	for (int i = 0; i < cantidadNumeros; i++)
 	{
 		if (numeros[i] > mayor) {
 			mayor = numeros[i];
@@ -32,7 +36,7 @@ int Calculo::calcularMayor() {
 
 int Calculo::calcularMenor() {
 	int menor = numeros[0];
-	for (int i = 0; i < (sizeof(numeros) / sizeof(*numeros)); i++)
+	for (int i = 0; i < cantidadNumeros; i++)
 	{
 		if (numeros[i] < menor) {
 			menor = numeros[i];
@@ -45,7 +49,7 @@ int Calculo::calcularMenor() {
 double Calculo::calcularPromedio() {
 	double suma = 0.0;
 
-	for (int i = 0; i < (sizeof(numeros) / sizeof(*numeros)); i++)
+	for (int i = 0; i < cantidadNumeros; i++)
 	{
 		suma += numeros[i];
 	}

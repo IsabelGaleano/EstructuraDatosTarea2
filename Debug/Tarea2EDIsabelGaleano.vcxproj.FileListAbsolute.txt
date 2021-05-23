@@ -1,1 +1,2 @@
 C:\Users\Asus VivoBook\source\repos\Tarea2EDIsabelGaleano\Debug\Tarea2EDIsabelGaleano.exe
+C:\EstructuraDatos1\Tareas\Tarea2\EstructuraDatosTarea2\Debug\Tarea2EDIsabelGaleano.exe

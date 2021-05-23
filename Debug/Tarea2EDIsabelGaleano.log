@@ -1,2 +1,7 @@
-﻿  Controller.cpp
-  Tarea2EDIsabelGaleano.vcxproj -> C:\Users\Asus VivoBook\source\repos\Tarea2EDIsabelGaleano\Debug\Tarea2EDIsabelGaleano.exe
+﻿  Calculo.cpp
+  Controller.cpp
+  Gestor.cpp
+C:\EstructuraDatos1\Tareas\Tarea2\EstructuraDatosTarea2\Gestor.cpp(12,9): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+C:\EstructuraDatos1\Tareas\Tarea2\EstructuraDatosTarea2\Gestor.cpp(21,9): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  Tarea2EDIsabelGaleano.vcxproj -> C:\EstructuraDatos1\Tareas\Tarea2\EstructuraDatosTarea2\Debug\Tarea2EDIsabelGaleano.exe
